@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>gcbc1</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h2>What's next for mining?</h2>
+						<h4>David Novakovic</h4>
+						<p style="font-size: 0.5em">
+						ETH: 0xd694E840d073716b913040cbE41d691cF7Be42E7<br/>
+						<a href="http://twitter.com/dpn">@dpn</a>
+						</p>
+					</section>
+					<section>
+						<ul>
+							<li>Misconceptions</li>
+							<li>Consensus</li>
+							<li>Proof of work vs Proof of stake</li>
+							<li>What does it all mean?</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>Common Misconceptions</h4>
+						<ul>
+							<li>Mining is about "creating currency"</li>
+							<li>Mining is a processing power arms race.</li>
+							<li>You need special hardware to mine.</li>
+							<li>Mining is the only way to make money on blockchains</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Mining as creating money.</h4>
+						<p>In the case of bitcoin, the issue of bitcoins after
+						successfully solving a block is a reward/payment for work done not the result of the work.
+						</p>
+						<h5>So what is the result?</h5>
+					</section>
+					<section>
+						<h4>Mining is a processing and power arms race.</h4>
+						<p>There's some truth to this, but as you will see later, it's not always the case for several reasons. <br/><br/> Mining may be more accessible than you think.
+						</p>
+						<blockquote>
+							a single bitcoin transaction requires as much electricity as the daily consumption of 1.6 American households
+						</blockquote><a href="https://motherboard.vice.com/en_us/article/aek3za/bitcoin-could-consume-as-much-electricity-as-denmark-by-2020">* vice.com</a>
+					</section>
+					<section>
+						<h4>You need special hardware to mine.</h4>
+						<p>
+						For many, many coins this is the case. But there are plenty that have consciously designed the blockchain implementation to make it very, very hard for dedicated mining hardware to work.
+						</p>
+						<h5>Ethereum is one good example. * </h5>
+						<span style="font-size: 0.5em"><a href="https://github.com/ethereum/wiki/wiki/White-Paper#mining-centralization">* Relevant ETH whitepaper section.</a></span>
+					</section>
+					<section>
+						<h4>Mining is the only way to make money on blockchains</h4>
+						<p>Nope. Examples to follow :)</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<p>So getting back to mining being about creating currency.</p>
+						<p>What is it actually for?<p>
+						<h2>All about consensus baby &#x1F33B</h2>
+					</section>
+					<section>
+						<h4>Coins are payment for work</h4>
+						<ul>
+							<li>New blocks are where pending transactions are stored.</li>
+							<li>Miners persist the transaction in the newly created block.</li>
+							<li>The more people on the network verify each new block, the more resilient to failure it is.</li>
+						</ul>
+						<p>Now THAT is the result of the work that gets done. Then consensus is the majority agreeing with it.</p>
+					</section>
+					<section>
+						<h4>So, the blockchain is a distributed bank, the coins are transaction fees?</h4>
+						<p>Kinda. As you'll see later, transaction fees are different and will become much more important in the future.
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>Bitcoin after 21m</h4>
+						<p>After 21m BTC have been created no more will be created on the main BTC chain.</p>
+						<h5>So why Mine?</h5>
+						<ul>
+							<li>BTC transactions still carry a transaction fee paid to the miner who records the transaction</li>
+							<li>mining will be less about the gold rush and more about a verifiable distributed ledger of currency</li>
+							<li>In other currencies, there's other reasons to mine too.</li>
+						</ul>
+						<h5>Feels more mature right?</h5>
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h4>Proof of work</h4>
+						<p>
+							The likelihood of mining a block is directly related to how much work a miner can do.
+							<ul>
+								<li>BTC</li>
+								<li>ETH (for now)</li>
+								<li>Dash</li>
+								<li>SiaCoin</li>
+								<li>Litecoin</li>
+								<li>...</li>
+							</ul><br/>
+
+							In theory when coins run out, the transaction fees will make the work worthwhile anyway.
+						</p>
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h4>Proof of stake</h4>
+						<p>
+							The likelihood of "mining" a block is calculated based on how much coin you currently hold or your "stake". (or some variation of this idea)
+							<ul>
+								<li>Nxt</li>
+								<li>BlackCoin</li>
+								<li>Peercoin</li>
+								<li>ETH (potentially)</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h4>POS Considerations</h4>
+						<p>
+						<ul>
+							<li>Nothing at stake</li>
+							<li>Proof of burn (used in POW too - see SiaCoin)</li>
+							<li>A lot less energy hungry (no arms race)</li>
+							<li>Stake coin age, size</li>
+							<li>Generally all coins are made at the start - remember transaction fees?</li>
+							<li>Eth's slasher and CASPER *</li>
+							<li>Kinda sounds like post-21m bitcoin without the crazy power consumption</li>
+						</ul>
+						</p>
+
+						<span style="font-size: 0.5em"><a href="https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ">* Really great read about ETH's POS ideas here.</a></span>
+					</section>
+				</section>
+				<section>But what does it all mean Basil?</section>
+				<section>
+					<h4>Thanks</h4>
+					Reach out to me if you'd like to discuss more!
+					<ul>
+						<li><a href="http://twitter.com/dpn">@dpn</a></li>
+						<li>dpn [at] dpn [dawt] name
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
